@@ -24,7 +24,6 @@ def can_be_created_with_a_hash_of_attributes
 end
 
 def can_be_created_in_a_block(title: "Home Alone", release_date: 1990)
-  # binding.pry
   # If no arguments are passed, use default values:
   #  title == "Home Alone"
   #  release_date == 1990
@@ -32,6 +31,7 @@ def can_be_created_in_a_block(title: "Home Alone", release_date: 1990)
        m.title = "#{title}"
        m.release_date = "#{release_date}"
     end
+    binding.pry
 end
 
 def can_get_the_first_item_in_the_database
